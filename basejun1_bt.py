@@ -1,8 +1,9 @@
 import asyncio
-import bluetooth
+# import bluetooth
 from bleak import BleakClient
 
 JUNTEK_UUID = "0000ffe1-0000-1000-8000-00805f9b34fb"
+#JUNTEK_UUID = "ae656aea-86c2-d654-f73b-d3f9cc15a9d6"
 
 async def read_juntek_data(address):
     async with BleakClient(address) as client:
